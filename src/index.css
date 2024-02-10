@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .detail-text {
+    @apply text-gray-500 dark:text-white group-hover:text-white duration-300 text-lg line-clamp-2;
+  }
+  .detail-text-2 {
+    @apply text-xl  font-bold  bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mt-3;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 40s linear infinite;
+}
